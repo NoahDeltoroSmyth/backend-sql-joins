@@ -2,11 +2,12 @@
 -- use INNER JOIN FROM address on to city
 
 SELECT
-    address.address_id
-    -- city.city_id
+    address_id
 FROM 
     address
 INNER JOIN
     city
 ON
     address.city_id = city.city_id
+WHERE
+    city = 'Dundee'
